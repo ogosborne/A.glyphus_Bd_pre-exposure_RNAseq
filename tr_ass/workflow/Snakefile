@@ -1,0 +1,13 @@
+
+# modules
+include: "rules/common.smk"
+include: "rules/assembly.smk"
+include: "rules/assembly_qc.smk"
+include: "rules/annotation.smk"
+
+# target rule
+rule all:
+    input:
+        output_dir + "emapper/" + asm_name + ".emapper.annotations",
+         output_dir + "busco/" + asm_name + "/short_summary.specific." + config["busco"]["lineage"] + "." + asm_name + ".txt",
+        output_dir + "transrate/assemblies.csv",

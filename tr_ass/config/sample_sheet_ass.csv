@@ -1,0 +1,14 @@
+sample,fastq_1,fastq_2
+16UV-SPLEEN,results_prep_data/binned/clean.16UV-SPLEEN.R1.fq.gz,results_prep_data/binned/clean.16UV-SPLEEN.R2.fq.gz
+53V-SPLEEN,results_prep_data/binned/clean.53V-SPLEEN.R1.fq.gz,results_prep_data/binned/clean.53V-SPLEEN.R2.fq.gz
+16UV-TP1-TOE,results_prep_data/binned/clean.16UV-TP1-TOE.R1.fq.gz,results_prep_data/binned/clean.16UV-TP1-TOE.R2.fq.gz
+13UV-TP2-TOE,results_prep_data/binned/clean.13UV-TP2-TOE.R1.fq.gz,results_prep_data/binned/clean.13UV-TP2-TOE.R2.fq.gz
+47V-TP1-TOE,results_prep_data/binned/clean.47V-TP1-TOE.R1.fq.gz,results_prep_data/binned/clean.47V-TP1-TOE.R2.fq.gz
+49V-TP2-TOE,results_prep_data/binned/clean.49V-TP2-TOE.R1.fq.gz,results_prep_data/binned/clean.49V-TP2-TOE.R2.fq.gz
+38UTA-TP1-TOE,results_prep_data/binned/clean.38UTA-TP1-TOE.R1.fq.gz,results_prep_data/binned/clean.38UTA-TP1-TOE.R2.fq.gz
+38UTA-TP2-TOE,results_prep_data/binned/clean.38UTA-TP2-TOE.R1.fq.gz,results_prep_data/binned/clean.38UTA-TP2-TOE.R2.fq.gz
+27UVC-TP1-TOE,results_prep_data/binned/clean.27UVC-TP1-TOE.R1.fq.gz,results_prep_data/binned/clean.27UVC-TP1-TOE.R2.fq.gz
+23UVC-TP2-TOE,results_prep_data/binned/clean.23UVC-TP2-TOE.R1.fq.gz,results_prep_data/binned/clean.23UVC-TP2-TOE.R2.fq.gz
+23UVC-TP4-TOE,results_prep_data/binned/clean.23UVC-TP4-TOE.R1.fq.gz,results_prep_data/binned/clean.23UVC-TP4-TOE.R2.fq.gz
+61VC-TP1-TOE,results_prep_data/binned/clean.61VC-TP1-TOE.R1.fq.gz,results_prep_data/binned/clean.61VC-TP1-TOE.R2.fq.gz
+65VC-TP2-TOE,results_prep_data/binned/clean.65VC-TP2-TOE.R1.fq.gz,results_prep_data/binned/clean.65VC-TP2-TOE.R2.fq.gz

@@ -1,0 +1,19 @@
+## input and output
+sample_sheet:
+  config/sample_sheet_ass.csv
+output_dir: 
+  /output/dir/path/
+asm_name: 
+  Aglyphus
+## emapper
+emapper:
+  db_dir:
+    /eggnogmapper/DB/path/
+  tax_scope:
+    2759
+## busco
+busco:
+  lineage:
+    metazoa_odb10
+  db_dir:
+    /busco/downloads/path/
