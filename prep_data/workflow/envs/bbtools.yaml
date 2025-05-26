@@ -1,0 +1,5 @@
+channels: 
+ - agbiome
+dependencies:
+ - bbtools = 37.62
+

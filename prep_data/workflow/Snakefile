@@ -1,0 +1,11 @@
+
+# modules
+include: "rules/common.smk"
+include: "rules/read_prep.smk"
+
+# target rule
+rule all:
+    input:
+        output_dir + "reports/read_trimming.html",
+        output_dir + "reports/bin_reads_by_ref.csv",
+        output_dir + "reports/bin_reads_by_ref.pdf"

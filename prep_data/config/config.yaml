@@ -1,0 +1,13 @@
+## input and output
+sample_sheet:
+  config/sample_sheet.csv
+output_dir: 
+  
+## seal read binning settings
+seal:
+  # the speed parameter for seal. it skips <speed> kmers to reduce memory consumption and processing time. 
+  speed: 15
+  # rrna: path to rRNA fasta
+  # known_contam: path to e.g. pathogen genome fasta
+  rrna: smr_v4.3_default_db.fasta
+  known_contam: Bd_all_genomes.fasta
