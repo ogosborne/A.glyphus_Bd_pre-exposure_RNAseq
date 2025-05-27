@@ -1,0 +1,143 @@
+﻿Category,Expression_pattern,gene,Description,Preferred_name,Preferred_name_short
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN984_c4_g1,Interleukin-10 receptor subunit beta,IL10RB receptor for immunosuppressive cytokine ,IL10RB
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN6238_c0_g1,tumor necrosis factor binding,TNFRSF1A,TNFRSF1A
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN3242_c1_g1,fibroblast activation-> IL17 receptor,IL17RA inflammation/antifungal response,IL17RA
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN5500_c0_g1,tumor necrosis factor receptor superfamily member 9,TNFRSF9 survival of CD8+ T cells,TNFRSF9
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN1859_c1_g1,Interferon gamma receptor 2,IFNGR2 intracellular pathogen response,IFNGR2
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN2792_c0_g1,interleukin-17 receptor activity,IL17RE mucosal defense,IL17RE
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN117_c8_g1,Interleukin-4 receptor subunit alpha,IL4R immune suppression/Type 2 response,IL4R
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN2688_c0_g1,Interleukin-20 receptor subunit alpha,IL20RA iflammation,IL20RA
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN13460_c0_g1,fibroblast growth factor receptor signaling pathway involved in positive regulation of cell proliferation in bone marrow,FGFR2 tissue repair,FGFR2
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN1045_c0_g1,Tumor necrosis factor receptor superfamily member,TNFRSF1B TNFa receptor/inflammation,TNFRSF1B
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN15574_c0_g2,interleukin-18 receptor binding,IL18 inflammation ,IL18
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN60227_c0_g1,Interleukin-13 receptor subunit alpha-1,IL13RA1  immune suppression/Type 2 response,IL13RA1
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN35684_c0_g1,transforming growth factor,TGFB1 immune suppression/fibrosis,TGFB1
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN84380_c0_g1,"Interleukin 1, beta",IL1B inflammation ,IL1B
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN6121_c0_g1,Interleukin 17C,IL17C antifungal/sometimes renders susceptible ,IL17C
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN2011_c1_g1,Interleukin-10 family,IL20 inflammation and wound repair,IL20
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN3040_c0_g2,Interleukin-1 / 18,IL18 inflammation,IL18
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN35907_c0_g1,Interleukin-10 family,IL10 immune suppression,IL10
+Immune.ligands.and.receptors,Bd.Exposure2,TRINITY_DN15537_c0_g1,Interleukin-1 / 18,IL18 inflammation,IL18
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN2630_c1_g1,"Class II histocompatibility antigen, alpha domain",HLA-DMA,HLA-DMA
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN95_c2_g1,positive regulation of MHC class I biosynthetic process,CIITA,CIITA
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN3022_c0_g2,"HLA class II histocompatibility antigen, DM beta",MHC-DMB,MHC-DMB
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN48673_c1_g1,V-set and immunoglobulin,VSIG1 Adhesion molecule,VSIG1
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN10812_c3_g1,Sialomucin core protein,CD164 adhesion,CD164
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN4958_c1_g1,CD20-like family,MS4A4A macrophage,MS4A4A
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN32_c0_g1,Ly-6 antigen / uPA receptor -like domain immune cell  marker,-,LY6
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN511_c7_g1,Immunoglobulin,CD58 LFA-3 adhesion,CD58
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN36086_c0_g1,"Lectin, galactoside-binding, soluble, 8 immune evasion",LGALS8,LGALS8
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN0_c5_g1,OX-2 membrane,CD200,CD200
+Adaptive.immunity,Bd.Exposure2,TRINITY_DN2540_c0_g1,thrombin-activated receptor activity,F2RL2,F2RL2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN1708_c0_g1,"Chymotrypsin-like elastase family, member 1",CELA1,CELA1
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN13_c2_g1,collagen biosynthetic process,TRAM2,TRAM2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN10667_c0_g1,Interferon-induced transmembrane protein,-,IFITM
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN1125_c4_g1,NADPH oxidase activator 1,NOXA1,NOXA1
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN2128_c0_g1,MDA-5 signaling pathway,IFIH1 antiviral/innnate response,IFIH1
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN2189_c0_g1,platelet formation,NBEAL2,NBEAL2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN8938_c1_g1,Lipopolysaccharide-induced tumor necrosis factor-alpha factor,LITAF,LITAF
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN518_c12_g1,interleukin-6 secretion,NOS2 Nitric Oxide production,NOS2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN3777_c0_g1,Cathelicidin antimicrobial peptide,CAMP,CAMP
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN310_c2_g1,"Coagulation factor 5/8 C-terminal domain, discoidin domain",DDR2,DDR2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN2296_c2_g1,lipopolysaccharide binding,BPI,BPI
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN130_c8_g1,cellular stress response to acidic pH,NOX1,NOX1
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN1280_c1_g1,prostaglandin catabolic process,ABHD16A,ABHD16A
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN17453_c0_g1,regulation of lipid metabolic process,TM6SF2,TM6SF2
+Antimicrobial.responses,Bd.Exposure2,TRINITY_DN11103_c0_g1,"Matrix metallopeptidase 3 (stromelysin 1, progelatinase)",MMP3,MMP3
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN10048_c0_g1,Ig-like C2-type domain,IL6ST,IL6ST
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN2205_c0_g1,Interleukin-1 receptor-associated,IRAK2,IRAK2
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN4545_c1_g1,CCR5 chemokine receptor binding,JAK1,JAK1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN7439_c1_g1,B-1 B cell differentiation,MALT1,MALT1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN35155_c0_g1,granuloma formation,CEBPB,CEBPB
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN9072_c0_g1,T-helper 1 cell lineage commitment,STAT6,STAT6
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN6014_c0_g1,CD109 molecule,CD109 tgf beta signaling,CD109
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN1854_c1_g1,epithelial cell proliferation,EHF,EHF
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN544_c2_g3,TRAF-interacting protein with,TIFA,TIFA
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN3287_c3_g2,CD40 signaling pathway,RNF31 inflammatory signaling,RNF31
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN1113_c10_g1,lymphoid lineage cell migration into thymus,FOXN1 skin and immune development,FOXN1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN11659_c0_g1,interferon regulatory factor 7,IRF7,IRF7
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN9476_c1_g1,TRAF3 interacting protein 2,TRAF3IP2,TRAF3IP2
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN259_c12_g1,Signal transducer and activator of transcription,STAT3,STAT3
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN6171_c0_g1,"Nuclear factor of kappa light polypeptide gene enhancer in B-cells 2, p49 p100",NFKB2,NFKB2
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN5442_c0_g1,MAP kinase kinase kinase kinase activity,MAP4K3,MAP4K3
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN1600_c10_g1,factor 10,KLF10,KLF10
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN3347_c1_g1,cysteine-rich with EGF-like,CRELD1 decrase in T cells,CRELD1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN6956_c2_g2,"Tumor necrosis factor, alpha-induced protein 3",TNFAIP3,TNFAIP3
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN175643_c0_g1,Nuclear factor of kappa light polypeptide gene enhancer in B-cells 1,NFKB1,NFKB1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN36756_c0_g1,regulation of mature B cell apoptotic process,BCL10,BCL10
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN8810_c0_g1,Inhibitor of nuclear factor kappa-B kinase subunit epsilon,IKBKE,IKBKE
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN2544_c1_g1,death-associated protein kinase 2,DAPK2,DAPK2
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN2568_c1_g1,nucleotide-binding oligomerization domain containing 1 signaling pathway,NFKBIA,NFKBIA
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN1709_c0_g1,Tumor necrosis factor alpha-induced protein,TNFAIP2,TNFAIP2
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN3238_c2_g1,death domain binding,TRADD,TRADD
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN4111_c2_g1,Induced myeloid leukemia cell differentiation protein Mcl-1,MCL1,MCL1
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN8514_c0_g2,receptor accessory protein,IL1RAP IL1 siganling/inflammatiopn ,IL1RAP
+Immune.cell.signaling,Bd.Exposure2,TRINITY_DN1397_c0_g1,positive regulation of endothelial cell chemotaxis,MET,MET
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN8061_c0_g1,c-X-C motif,CXCL11,CXCL11
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN10924_c0_g1,Programmed cell death 1 ligand 1,CD274 PDL1,CD274
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN34677_c0_g1,Inducible T-cell co-stimulator,ICOS,ICOS
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN33_c8_g1,Interferon alpha beta,IFNAR1,IFNAR1
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN724_c0_g1,cytokine receptor activity,IL21R,IL21R
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN51629_c1_g1,Interleukin 10,IL26 IL17 response by epithelial cells,IL26
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN5135_c0_g1,polymeric immunoglobulin receptor,PIGR transport of mucosla Abs,PIGR
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN91045_c1_g1,CD40 receptor binding,CD40LG,CD40LG
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN11121_c0_g3,regulation of lymphocyte apoptotic process,CD3D,CD3D
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN11320_c0_g1,cell-matrix adhesion involved in ameboidal cell migration,ITGB7,ITGB7
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN8367_c0_g1,CD209 antigen-like protein,CD209,CD209
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN76001_c0_g1,SLAM family member 5,CD84,CD84
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN920_c2_g1,interleukin-2 binding,IL2RG,IL2RG
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN3659_c1_g1,Toll-like receptor,TLR2,TLR2
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN39917_c0_g1,tumor necrosis factor-activated receptor activity,CD40,CD40
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN9332_c0_g1,Interleukin-27 receptor subunit alpha,IL27RA,IL27RA
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN24448_c0_g1,Tumor necrosis factor ligand superfamily member 6,FASLG,FASLG
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN13107_c0_g1,T cell CD4 receptor C terminal region,CD4,CD4
+Immune.ligands.and.receptors,Pre.Exposure,TRINITY_DN8303_c0_g1,T-cell surface glycoprotein,CD4,CD4
+Adaptive.immunity,Pre.Exposure,TRINITY_DN2206_c1_g1,"Class II histocompatibility antigen, beta domain",HLA-DRB1,HLA-DRB1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN3493_c1_g1,positive regulation of interleukin-10 biosynthetic process,BCL3,BCL3
+Adaptive.immunity,Pre.Exposure,TRINITY_DN2630_c0_g2,Component of the class I major histocompatibility complex (MHC). Involved in the presentation of peptide antigens to the immune system,B2M,B2M
+Adaptive.immunity,Pre.Exposure,TRINITY_DN493_c0_g1,Major histocompatibility complex class I-related gene protein-like,MR1,MR1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN1360_c1_g1,Major histocompatibility complex class I-related gene protein-like,MR1,MR1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN3106_c21_g1,Immunoglobulin C-Type,TRBV25-1,TRBV25-1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN93957_c0_g1,TAP binding protein (tapasin),TAPBP,TAPBP
+Adaptive.immunity,Pre.Exposure,TRINITY_DN8376_c0_g1,Immunoglobulin C-Type,SIRPB1 IFN induced,SIRPB1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN2269_c0_g1,Immunoglobulin omega chain-like,IGLV5-45,IGLV5-45
+Adaptive.immunity,Pre.Exposure,TRINITY_DN18964_c0_g1,Major histocompatibility complex class I-related gene protein-like,MR1,MR1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN18006_c0_g1,Immunoglobulin V-Type,-,IgV
+Adaptive.immunity,Pre.Exposure,TRINITY_DN63073_c0_g1,E3 ubiquitin-protein ligase RNF25,RNF25,RNF25
+Adaptive.immunity,Pre.Exposure,TRINITY_DN1731_c0_g1,Proteasome subunit beta type-8,PSMB8,PSMB8
+Adaptive.immunity,Pre.Exposure,TRINITY_DN88427_c0_g1,Major histocompatibility complex class I-related gene protein-like,MR1,MR1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN3219_c0_g1,peptide antigen-transporting ATPase activity,TAP1,TAP1
+Adaptive.immunity,Pre.Exposure,TRINITY_DN23475_c0_g1,"Proteasome (prosome, macropain) subunit, beta type",PSMB9,PSMB9
+Adaptive.immunity,Pre.Exposure,TRINITY_DN3472_c0_g1,Immunoglobulin V-Type,-,IgV
+Adaptive.immunity,Pre.Exposure,TRINITY_DN3259_c3_g2,"Part of the TCR-CD3 complex present on T-lymphocyte cell surface that plays an essential role in adaptive immune response. When antigen presenting cells (APCs) activate T-cell receptor (TCR), TCR-mediated signals are transmitted across the cell membrane by the CD3 chains CD3D, CD3E, CD3G and CD3Z. All CD3 chains contain immunoreceptor tyrosine-based activation motifs (ITAMs) in their cytoplasmic domain. Upon TCR engagement, these motifs become phosphorylated by Src family protein tyrosine kinases LCK and FYN, resulting in the activation of downstream signaling pathways. In addition of this role of signal transduction in T-cell activation, CD3E plays an essential role in correct T-cell development. Initiates the TCR-CD3 complex assembly by forming the two heterodimers CD3D CD3E and CD3G CD3E. Participates also in internalization and cell surface down- regulation of TCR-CD3 complexes via endocytosis sequences present in CD3E cytosolic region",CD3E,CD3E
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN3423_c0_g1,Interferon-inducible GTPase,IRGC,IRGC
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN7583_c0_g2,regulation of hematopoietic stem cell proliferation,EIF2AK2,EIF2AK2
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN3218_c1_g1,GTPase activity,GBP6 innate immunity,GBP6
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN5797_c0_g1,superoxide-generating NADPH oxidase activator activity,NOXO1 reactive oxygen production ,NOXO1
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN5664_c4_g1,regulation of erythrocyte enucleation,TRIM35,TRIM35
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN53191_c0_g1,Interferon-induced transmembrane protein, antiviral,IFITM
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN13357_c1_g2,dynamin family protein polymerization involved in membrane fission,MX1 antiviral,MX1
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN8923_c1_g1,DEXH (Asp-Glu-X-His) box polypeptide 58,DHX58,DHX58
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN8286_c0_g1,Interferon-inducible GTPase,IRGC,IRGC
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN4667_c0_g1,Predicted membrane protein (DUF2053),TMEM147,TMEM147
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN7972_c2_g1,Stimulator of interferon genes protein,TMEM173,TMEM173
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN20322_c0_g1,defense response to virus,IFIT5 antiviral,IFIT5
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN107140_c0_g1,Interferon-induced 35 kDa protein (IFP 35) N-terminus,NMI,NMI
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN57868_c0_g2,Interferon-inducible double-stranded RNA-dependent protein kinase activator A isoform X1,PRKRA,PRKRA
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN150542_c0_g1,ISG15-specific protease activity,USP18 IFN,USP18
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN5933_c0_g1,Immunoglobulin C-Type,SIRPB1 IFN response,SIRPB1
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN2728_c0_g2,interferon-alpha production,AZI2,AZI2
+Antimicrobial.responses,Pre.Exposure,TRINITY_DN4141_c3_g1,RIG-I signaling pathway,DDX58 RIGI antiviral,DDX58
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN35925_c0_g1,basic region leucin zipper,BATF3 DC and T cell ,BATF3
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN85_c0_g1,positive regulation of interleukin-4-mediated signaling pathway,PARP14,PARP14
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN4330_c0_g1,interferon regulatory factor,IRF8,IRF8
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN4567_c0_g1,dendritic cell proliferation,TBK1,TBK1
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN9944_c0_g1,Lymphocyte activation gene 3 protein,LAG3,LAG3
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN10577_c1_g1,interferon regulatory factor,IRF4,IRF4
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN7823_c0_g4,myeloid dendritic cell differentiation,BATF2,BATF2
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN1620_c0_g2,negative regulation of platelet-derived growth factor receptor-alpha signaling pathway,PHF14,PHF14
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN10341_c0_g2,positive regulation of peripheral T cell tolerance induction,FOXP3,FOXP3
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN6841_c0_g1,Mitogen-activated protein kinase kinase kinase 4,MAP3K4,MAP3K4
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN104473_c0_g2,olfactory receptor binding,RTP4,RTP4
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN9459_c0_g1,interferon regulatory factor,FOXS1,FOXS1
+Immune.cell.signaling,Pre.Exposure,TRINITY_DN26581_c0_g1,Serine threonine-protein kinase LMTK2,LMTK2,LMTK2
