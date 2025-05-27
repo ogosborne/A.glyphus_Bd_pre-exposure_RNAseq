@@ -1,0 +1,9 @@
+
+# modules
+include: "rules/common.smk"
+include: "rules/quant.smk"
+
+# target rule
+rule all:
+    input:
+        output_dir + "salmon/txi.RDS"

@@ -1,0 +1,9 @@
+## input and output
+sample_sheet:
+  config/sample_sheet_clean.csv
+output_dir: 
+  /output/dir/path/
+transcriptome:
+  /path/to/results_tr_ass/trinity/Aglyphus.Trinity.fasta
+tx2gene:
+  /path/to/results_tr_ass/trinity/Aglyphus.Trinity.fasta.gene_trans_map
