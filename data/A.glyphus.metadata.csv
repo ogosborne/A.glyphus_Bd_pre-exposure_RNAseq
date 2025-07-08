@@ -1,0 +1,149 @@
+﻿,Treatment,Bd1,Bd2,TimePoint,Day,Sex,Tissue,Trt_TP,Bdload,logBdload
+01UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,10680,4.028611915
+01UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"45,370",4.656778351
+02UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Male,Toe,mock-Bd_TP1,8812,3.94512377
+02UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Male,Toe,mock-Bd_TP2,"104,500",5.019120446
+03UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,23860,4.377688641
+04UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,314,2.498310554
+04UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"34,480",4.537579853
+05UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,29870,4.475249762
+05UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"26,260",4.41931126
+06UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,85760,4.933289836
+06UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"1,428,000",6.154728512
+07UV-SPLEEN,mock-Bd,mock,Bd,END,NA,Female,Spleen,mock-Bd_END,NA,NA
+07UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,933,2.970346876
+07UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"736,400",5.86711437
+08UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,1034,3.01494035
+08UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"91,270",4.960332809
+09UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,380,2.580924976
+09UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"2,143,000",6.331022374
+10UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Male,Toe,mock-Bd_TP1,0,0
+10UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Male,Toe,mock-Bd_TP2,"4,168",3.620031895
+11UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Male,Toe,mock-Bd_TP1,0,0
+11UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Male,Toe,mock-Bd_TP2,"11,580",4.063746062
+12UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,4365,3.640083731
+12UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"58,740",4.768941336
+13UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,399,2.602059991
+13UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"48,750",4.687983529
+14UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,3211,3.506775537
+14UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"93,570",4.971141271
+15UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Male,Toe,mock-Bd_TP1,12,1.113943352
+15UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Male,Toe,mock-Bd_TP2,"11,420",4.057704132
+16UV-SPLEEN,mock-Bd,mock,Bd,END,NA,Female,Spleen,mock-Bd_END,NA,NA
+16UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,15580,4.192595328
+16UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"82,690",4.917458244
+17UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,7640,3.8831502
+17UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"30,710",4.487293958
+18UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,3243,3.511080846
+18UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"36,910",4.567155811
+19UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Female,Toe,mock-Bd_TP1,24,1.397940009
+19UV-TP2-TOE,mock-Bd,mock,Bd,TP2,29,Female,Toe,mock-Bd_TP2,"15,580",4.192595328
+20UV-SPLEEN,mock-Bd,mock,Bd,END,NA,Male,Spleen,mock-Bd_END,NA,NA
+20UV-TP1-TOE,mock-Bd,mock,Bd,TP1,14,Male,Toe,mock-Bd_TP1,597,2.776701184
+21UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+21UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+22UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+22UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+22UVC-TP4-TOE,mock-mock,mock,mock,TP4,81,Female,Toe,mock-mock_TP4,NA,NA
+23UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Male,Toe,mock-mock_TP1,0,0
+23UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Male,Toe,mock-mock_TP2,0,0
+23UVC-TP4-TOE,mock-mock,mock,mock,TP4,81,Male,Toe,mock-mock_TP4,NA,NA
+24UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+24UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+24UVC-TP4-TOE,mock-mock,mock,mock,TP4,81,Female,Toe,mock-mock_TP4,NA,NA
+25UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+25UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+26UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+26UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+27UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+27UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+28UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+28UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+29UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Male,Toe,mock-mock_TP1,0,0
+29UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Male,Toe,mock-mock_TP2,0,0
+29UVC-TP4-TOE,mock-mock,mock,mock,TP4,81,Male,Toe,mock-mock_TP4,NA,NA
+30UVC-TP1-TOE,mock-mock,mock,mock,TP1,14,Female,Toe,mock-mock_TP1,0,0
+30UVC-TP2-TOE,mock-mock,mock,mock,TP2,29,Female,Toe,mock-mock_TP2,0,0
+31UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+31UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+32UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+32UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+33UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+33UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+34UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Male,Toe,untreated control_TP1,0,0
+34UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Male,Toe,untreated control_TP2,0,0
+35UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Male,Toe,untreated control_TP1,0,0
+35UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Male,Toe,untreated control_TP2,0,0
+36UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+36UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+37UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+37UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+38UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+38UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+39UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+39UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+40UTA-TP1-TOE,untreated control,untreated control,untreated control,TP1,14,Female,Toe,untreated control_TP1,0,0
+40UTA-TP2-TOE,untreated control,untreated control,untreated control,TP2,29,Female,Toe,untreated control_TP2,0,0
+41V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,153600,5.186394043
+42V-SPLEEN,Bd-Bd,Bd,Bd,END,NA,Female,Spleen,Bd-Bd_END,NA,NA
+42V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,26500,4.423262262
+42V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"719,700",5.857152106
+44V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,374,2.574031268
+44V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,"13,240",4.121920786
+45V-SPLEEN,Bd-Bd,Bd,Bd,END,NA,Female,Spleen,Bd-Bd_END,NA,NA
+45V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,38300,4.583210113
+45V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,56770,4.754127
+46V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,5840,3.766487206
+46V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,"41,720",4.620354709
+47V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,192100,5.283529626
+48V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,26780,4.427826789
+48V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"6,742,000",6.828788813
+49V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,9449,3.975431809
+49V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"58,910",4.770196395
+50V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,46,1.672097858
+50V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,"1,072",3.030599722
+51V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,5923,3.77261505
+51V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"56,300",4.750516109
+52V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,21050,4.323272731
+53V-SPLEEN,Bd-Bd,Bd,Bd,END,NA,Female,Spleen,Bd-Bd_END,NA,NA
+53V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,70340,4.847208538
+53V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"688,500",5.837904575
+54V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,22,1.361727836
+54V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,615,2.789580712
+55V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,2770,3.442636526
+55V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"42,220",4.625528515
+56V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,14200,4.152318927
+56V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"87,050",4.939773764
+57V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,15250,4.183298321
+57V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"151,100",5.179267339
+58V-SPLEEN,Bd-Bd,Bd,Bd,END,NA,Male,Spleen,Bd-Bd_END,NA,NA
+58V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,12270,4.088879956
+58V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,"9,770",3.989939013
+59V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,3271,3.514813295
+59V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"30,350",4.482173005
+60V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Male,Toe,Bd-Bd_TP1,17,1.255272505
+60V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Male,Toe,Bd-Bd_TP2,18,1.278753601
+61VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+61VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+62VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Male,Toe,Bd-mock_TP1,0,0
+62VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Male,Toe,Bd-mock_TP2,0,0
+63VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+63VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+64VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+64VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+65VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+65VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+66VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+66VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+67VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+67VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+69VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Female,Toe,Bd-mock_TP1,0,0
+69VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Female,Toe,Bd-mock_TP2,0,0
+70VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Male,Toe,Bd-mock_TP1,0,0
+70VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Male,Toe,Bd-mock_TP2,0,0
+71VC-TP1-TOE,Bd-mock,Bd,mock,TP1,14,Male,Toe,Bd-mock_TP1,0,0
+71VC-TP2-TOE,Bd-mock,Bd,mock,TP2,29,Male,Toe,Bd-mock_TP2,0,0
+72V-SPLEEN,Bd-Bd,Bd,Bd,END,NA,Female,Spleen,Bd-Bd_END,NA,NA
+72V-TP1-TOE,Bd-Bd,Bd,Bd,TP1,14,Female,Toe,Bd-Bd_TP1,7634,3.882809041
+72V-TP2-TOE,Bd-Bd,Bd,Bd,TP2,29,Female,Toe,Bd-Bd_TP2,"635,700",5.803252895
+,-,,,,,,,,,
