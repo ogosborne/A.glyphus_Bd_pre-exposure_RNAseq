@@ -1,0 +1,16 @@
+﻿,col,shp
+Bd-Bd_TP1,#732f30,24
+Bd-Bd_TP2,#732f30,17
+Bd-mock_TP1,#732f30,21
+Bd-mock_TP2,#732f30,19
+mock-Bd_TP1,#b38711,24
+mock-Bd_TP2,#b38711,17
+mock-mock_TP1,#b38711,21
+mock-mock_TP2,#b38711,19
+untreated_TP1,#5b859e,21
+untreated_TP2,#5b859e,19
+Spleen,lightcoral,
+Toe,gold,
+Bd,,24
+mock,,21
+untreated,,21
