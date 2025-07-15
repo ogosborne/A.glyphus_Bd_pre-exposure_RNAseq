@@ -7,7 +7,6 @@ library(tximport)
 # upset plot
 library(UpSetR)
 # GO
-library(GOSim) # getAncestors
 library(topGO) # topGO
 
 ##### 1. PREP DATA
@@ -295,7 +294,6 @@ save(res_all, file = "results/DESeq/DESeq_all_contrasts.RData")
 ##### 3. GO ENRICHMENT
 ont="BP"
 alg="elim"
-GOanc <- GOSim::getAncestors()
 # intersections of interest
 siglists <- list()
 siglists$preExp <- res_preExposure_specific$gene
@@ -330,10 +328,11 @@ for(i in names(siglists)){
   # get results
   goRes <- GenTable(GOdata, 
                     P = GOtests,
-                    topNodes = length(which(GOtests@score < 0.05)),
+                    topNodes = length(GOtests@score),
                     numChar = 1000)
-  # add is immune
-  goRes$Immune.related <- unlist(lapply(as.list(goRes$GO.ID), function(x) "GO:0002376" %in% GOanc[[x]]))
+  # adjust P values
+  goRes$Q <- p.adjust(goRes$P, method = "fdr")
+  goRes <- goRes[which(goRes$Q < 0.05), ]
   # add to output
   GOEnRes[[i]] <- goRes
 }
@@ -345,12 +344,11 @@ write.csv(GOEnRes$Bd[,1:6], file = "results/GO/GOEnrich_Bd_specific.csv", row.na
 # Remove unnecessary cols and combine all GO enrichment results
 all_GO <- GOEnRes
 for(i in names(all_GO)) colnames(all_GO[[i]])[6] <- paste(i, colnames(all_GO[[i]])[6], sep = ".")
+for(i in names(all_GO)) colnames(all_GO[[i]])[7] <- paste(i, colnames(all_GO[[i]])[7], sep = ".")
 for(i in names(all_GO)) all_GO[[i]] <- all_GO[[i]][,c(1,2,6,7)]
 all_GO <- lapply(all_GO, as.data.frame)
 all_GO <- Reduce(function(x,y) merge(x, y, all = T),  all_GO)
 all_GO <- all_GO %>% replace(is.na(.), "n.s")
-# put immune related terms first
-all_GO <- rbind(all_GO[all_GO$Immune.related,],all_GO[!(all_GO$Immune.related),])
 # save
 write.csv(all_GO, "results/GO/All_GOenrichment.csv", row.names = F)
 
