@@ -7,3 +7,4 @@ The repo contains the following code directories:
 2. **tr_ass**: snakemake pipeline to assemble de novo transcriptome, annotate transcripts and run QC.
 3. **quant**: snakemake pipeline to quantify transcript expression.
 4. **DEG_analysis**: R code for differential expression analyses.
+5. **data**: Metadata for R analyses
