@@ -8,6 +8,10 @@ library(tximport)
 library(UpSetR)
 # GO
 library(topGO) # topGO
+# expression pattern plots
+library(ggpubr)
+library(ggplot2)
+library(rstatix)
 
 ##### 1. PREP DATA
 # load metadata
@@ -352,3 +356,161 @@ all_GO <- all_GO %>% replace(is.na(.), "n.s")
 # save
 write.csv(all_GO, "results/GO/All_GOenrichment.csv", row.names = F)
 
+##### 4. Directional expression patterns for pre-exposure specific and infection specific genes
+# get expression values, separate over/under expressed and pre-exposure specific and Bd infection specific
+PdatO <- assay(vst$toe)[res_preExposure_specific[res_preExposure_specific$sigOvrexp_comb == "0011","gene"], ]
+PdatU <- assay(vst$toe)[res_preExposure_specific[res_preExposure_specific$sigUndexp_comb == "0011","gene"], ]
+BdatO <- assay(vst$toe)[res_BdExp2_specific[res_BdExp2_specific$sigOvrexp_comb == "1111","gene"], ]
+BdatU <- assay(vst$toe)[res_BdExp2_specific[res_BdExp2_specific$sigUndexp_comb == "1111","gene"], ]
+# scale expression per gene
+PdatO <- t(scale(t(PdatO)))
+PdatU <- t(scale(t(PdatU)))
+BdatO <- t(scale(t(BdatO)))
+BdatU <- t(scale(t(BdatU)))
+# extract subsets
+mean_scaled_exp <- list()
+mean_scaled_exp$Pre_OE_TP1_mock.mock <- PdatO[,grep("UVC-TP1-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP1_bd.mock <- PdatO[,grep("\\dVC-TP1-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP1_mock.bd <- PdatO[,grep("UV-TP1-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP1_bd.bd <- PdatO[,grep("\\dV-TP1-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP2_mock.mock <- PdatO[,grep("UVC-TP2-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP2_bd.mock <- PdatO[,grep("\\dVC-TP2-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP2_mock.bd <- PdatO[,grep("UV-TP2-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_OE_TP2_bd.bd <- PdatO[,grep("\\dV-TP2-TOE", colnames(PdatO))]
+mean_scaled_exp$Pre_UE_TP1_mock.mock <- PdatU[,grep("UVC-TP1-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP1_bd.mock <- PdatU[,grep("\\dVC-TP1-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP1_mock.bd <- PdatU[,grep("UV-TP1-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP1_bd.bd <- PdatU[,grep("\\dV-TP1-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP2_mock.mock <- PdatU[,grep("UVC-TP2-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP2_bd.mock <- PdatU[,grep("\\dVC-TP2-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP2_mock.bd <- PdatU[,grep("UV-TP2-TOE", colnames(PdatU))]
+mean_scaled_exp$Pre_UE_TP2_bd.bd <- PdatU[,grep("\\dV-TP2-TOE", colnames(PdatU))]
+mean_scaled_exp$BdI_OE_TP1_mock.mock <- BdatO[,grep("UVC-TP1-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP1_bd.mock <- BdatO[,grep("\\dVC-TP1-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP1_mock.bd <- BdatO[,grep("UV-TP1-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP1_bd.bd <- BdatO[,grep("\\dV-TP1-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP2_mock.mock <- BdatO[,grep("UVC-TP2-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP2_bd.mock <- BdatO[,grep("\\dVC-TP2-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP2_mock.bd <- BdatO[,grep("UV-TP2-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_OE_TP2_bd.bd <- BdatO[,grep("\\dV-TP2-TOE", colnames(BdatO))]
+mean_scaled_exp$BdI_UE_TP1_mock.mock <- BdatU[,grep("UVC-TP1-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP1_bd.mock <- BdatU[,grep("\\dVC-TP1-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP1_mock.bd <- BdatU[,grep("UV-TP1-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP1_bd.bd <- BdatU[,grep("\\dV-TP1-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP2_mock.mock <- BdatU[,grep("UVC-TP2-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP2_bd.mock <- BdatU[,grep("\\dVC-TP2-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP2_mock.bd <- BdatU[,grep("UV-TP2-TOE", colnames(BdatU))]
+mean_scaled_exp$BdI_UE_TP2_bd.bd <- BdatU[,grep("\\dV-TP2-TOE", colnames(BdatU))]
+# get mean scaled expression for each gene in each group
+for(i in names(mean_scaled_exp)){
+  mean_scaled_exp[[i]] <- rowMeans(mean_scaled_exp[[i]])
+}
+# get data for ggplot
+ggdat <- list()
+# Pre_OE
+len <- length(mean_scaled_exp$Pre_OE_TP1_mock.mock)
+ggdat$Pre_OE_TP1 <- data.frame(expression = c(mean_scaled_exp$Pre_OE_TP1_mock.mock, mean_scaled_exp$Pre_OE_TP1_bd.mock, mean_scaled_exp$Pre_OE_TP1_mock.bd, mean_scaled_exp$Pre_OE_TP1_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+ggdat$Pre_OE_TP2 <- data.frame(expression = c(mean_scaled_exp$Pre_OE_TP2_mock.mock, mean_scaled_exp$Pre_OE_TP2_bd.mock, mean_scaled_exp$Pre_OE_TP2_mock.bd, mean_scaled_exp$Pre_OE_TP2_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+# Pre_UE
+len <- length(mean_scaled_exp$Pre_UE_TP1_mock.mock)
+ggdat$Pre_UE_TP1 <- data.frame(expression = c(mean_scaled_exp$Pre_UE_TP1_mock.mock, mean_scaled_exp$Pre_UE_TP1_bd.mock, mean_scaled_exp$Pre_UE_TP1_mock.bd, mean_scaled_exp$Pre_UE_TP1_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+ggdat$Pre_UE_TP2 <- data.frame(expression = c(mean_scaled_exp$Pre_UE_TP2_mock.mock, mean_scaled_exp$Pre_UE_TP2_bd.mock, mean_scaled_exp$Pre_UE_TP2_mock.bd, mean_scaled_exp$Pre_UE_TP2_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+# BdI_OE
+len <- length(mean_scaled_exp$BdI_OE_TP1_mock.mock)
+ggdat$BdI_OE_TP1 <- data.frame(expression = c(mean_scaled_exp$BdI_OE_TP1_mock.mock, mean_scaled_exp$BdI_OE_TP1_bd.mock, mean_scaled_exp$BdI_OE_TP1_mock.bd, mean_scaled_exp$BdI_OE_TP1_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+ggdat$BdI_OE_TP2 <- data.frame(expression = c(mean_scaled_exp$BdI_OE_TP2_mock.mock, mean_scaled_exp$BdI_OE_TP2_bd.mock, mean_scaled_exp$BdI_OE_TP2_mock.bd, mean_scaled_exp$BdI_OE_TP2_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+# BdI_UE
+len <- length(mean_scaled_exp$BdI_UE_TP1_mock.mock)
+ggdat$BdI_UE_TP1 <- data.frame(expression = c(mean_scaled_exp$BdI_UE_TP1_mock.mock, mean_scaled_exp$BdI_UE_TP1_bd.mock, mean_scaled_exp$BdI_UE_TP1_mock.bd, mean_scaled_exp$BdI_UE_TP1_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+ggdat$BdI_UE_TP2 <- data.frame(expression = c(mean_scaled_exp$BdI_UE_TP2_mock.mock, mean_scaled_exp$BdI_UE_TP2_bd.mock, mean_scaled_exp$BdI_UE_TP2_mock.bd, mean_scaled_exp$BdI_UE_TP2_bd.bd), group = c(rep("mock-mock", len), rep("Bd-mock", len), rep("mock-Bd", len), rep("Bd-Bd", len)))
+rm(len)
+# run paired wilcoxon tests for comparisons of interest
+t_test <- list()
+for(i in names(ggdat)){
+  my.tt <- wilcox_test(data = ggdat[[i]], 
+                  formula = expression ~ group, 
+                  comparisons = list(c("mock-mock", "Bd-mock"), c("mock-Bd", "Bd-Bd"), c("mock-mock", "mock-Bd"), c("Bd-mock", "Bd-Bd")), 
+                  p.adjust.method = "bonferroni", paired = TRUE
+                  )
+  my.tt <- my.tt %>% add_y_position()
+  t_test[[i]] <- my.tt
+  rm(my.tt)
+}
+# plot
+# Pre-exposure specific 
+# TP1 over-expression
+p1 <- ggboxplot(ggdat$Pre_OE_TP1, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$Pre_OE_TP1, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(a) TP1 over-expressed genes") +
+  theme(legend.position = "none")
+# TP2 over-expression
+p2 <- ggboxplot(ggdat$Pre_OE_TP2, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$Pre_OE_TP2, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(b) TP2 over-expressed genes") +
+  theme(legend.position = "none")
+# TP1 under-expression
+p3 <- ggboxplot(ggdat$Pre_UE_TP1, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$Pre_UE_TP1, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(c) TP1 under-expressed genes") +
+  theme(legend.position = "none")
+# TP2 under-expression
+p4 <- ggboxplot(ggdat$Pre_UE_TP2, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$Pre_UE_TP2, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(d) TP2 under-expressed genes") +
+  theme(legend.position = "none")
+plot_grid(p1, p2, p3, p4, ncol = 2)
+
+# infection specific 
+# TP1 over-expression
+p1 <- ggboxplot(ggdat$BdI_OE_TP1, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$BdI_OE_TP1, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(a) TP1 over-expressed genes") +
+  theme(legend.position = "none")
+# TP2 over-expression
+p2 <- ggboxplot(ggdat$BdI_OE_TP2, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$BdI_OE_TP2, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(b) TP2 over-expressed genes") +
+  theme(legend.position = "none")
+# TP1 under-expression
+p3 <- ggboxplot(ggdat$BdI_UE_TP1, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$BdI_UE_TP1, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(c) TP1 under-expressed genes") +
+  theme(legend.position = "none")
+# TP2 under-expression
+p4 <- ggboxplot(ggdat$BdI_UE_TP2, x = "group", y = "expression", color = "group", add = "jitter", shape = "group", add.params = list(size = 2, alpha = 0.5)) +
+  scale_color_manual(values = c("mock-mock" = "#b38711", "mock-Bd" = "#b38711", "Bd-mock" = "#732f30", "Bd-Bd" = "#732f30")) +
+  scale_shape_manual(values = c("mock-mock" = 19, "mock-Bd" = 17, "Bd-mock" = 19, "Bd-Bd" = 17)) +
+  stat_pvalue_manual(t_test$BdI_UE_TP2, label = "p.adj.signif", hide.ns = F) +
+  ylab("Mean scaled expression") + 
+  xlab("Group") + 
+  ggtitle("(d) TP2 under-expressed genes") +
+  theme(legend.position = "none")
+plot_grid(p1, p2, p3, p4, ncol = 2)
