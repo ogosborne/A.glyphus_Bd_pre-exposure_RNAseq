@@ -1,6 +1,6 @@
 # A.glyphus_Bd_pre-exposure_RNAseq
 
-Contains code for RNAseq analysis of *Atelopus glyphus* for the project: **Prior-exposing highly susceptible harlequin toads to Batrachochytrium dendrobatidis worsens disease outcomes upon re-exposure**. 
+Contains code for RNAseq analysis of *Atelopus glyphus* for the project: **Prior infection by Batrachochytrium dendrobatidis in harlequin toads shifts their immune-microbial state and upon re-infection worsens disease outcomes**. 
 
 The repo contains the following code directories:
 1. **prep_data**: snakemake pipeline to trim reads and remove contaminant and rRNA sequences.
