@@ -12,6 +12,7 @@ library(topGO) # topGO
 library(ggpubr)
 library(ggplot2)
 library(rstatix)
+library(cowplot)
 
 ##### 1. PREP DATA
 # load metadata
