@@ -107,7 +107,6 @@ expr_TP2 <- assay(vst_TP2) %>% as.matrix() %>% t() %>% scale(., center = T, scal
 all(rownames(mb_TP1_clr) == rownames(expr_TP1))
 all(rownames(mb_TP2_clr) == rownames(expr_TP2))
 
-
 ##### 2. SPARSE CCA
 # build data object for CCA
 CCAdat <- list()
@@ -139,11 +138,9 @@ for(tp in TPs){
                                             K = 1, nboot = 1000,
                                             seed = seeds[[tp]])
 }
-
 # output table 
 combined_bscca_table <- combine_bscca(bs_cca_res_results)
 write.csv(combined_bscca_table, paste0(outdir,"CCA_results.csv"), row.names = FALSE)
-
 # Plot canonical variates (with mean canonical weights across bootstrap reps)
 aes <- read.csv("data/aesthetics.csv", row.names = 1, header = T)
 score_plots <- list()
@@ -192,9 +189,6 @@ pdf(paste0(outdir,"canonical_variate_plots.pdf"), width = 6.75, height = 8.2)
 combined_plot
 dev.off()
 
-
-
-
 ##### 3. ALL-BY-ALL CORRELATIONS OF CCA-SELECTED FEATURES
 # select features for further analysis as the features that have a bootstrap selection frequency > 0.4 in either timepoint 
 thresh = 0.4
@@ -214,8 +208,6 @@ corsdf_uni_all <- cors2df(cors = cors_uni_all, gene_info = res_all, taxonomy = t
 # keep only cors which are significant at both timepoints for network plot and group-wise correlation analysis
 corsdf_uni_all_bothTP_allCor <- filter_by_significance(corsdf_uni_all, sig_filter = "both", alpha = 0.05, min_abs_cor = 0)
 write.csv(corsdf_uni_all_bothTP_allCor, paste0(outdir,"cors_bothTPs.csv"), row.names = FALSE)
-
-
 # Make input for gephi for network plot
 # Edge table (gene–microbe only, with mean and sign) ---
 gephi_edges <- corsdf_uni_all_bothTP_allCor %>%
@@ -257,21 +249,16 @@ nodes <- corsdf_uni_all_bothTP_allCor %>%
   distinct(id, .keep_all = TRUE) %>%
   left_join(gm_counts, by = "id") %>%
   mutate(n_gm_edges = ifelse(is.na(n_gm_edges), 0, n_gm_edges))
-
 # Keep only nodes with >=1 GM edge
 nodes_filt <- nodes %>%
   filter(n_gm_edges >= 1)
-
 # keep only edges between retained nodes
 edges_filt <- gephi_edges %>%
   filter(source %in% nodes_filt$id, target %in% nodes_filt$id, abs(mean_r) > 0.1)
-
-# remove orphan nodes (not in filtered edges) ---
+# remove orphan nodes
 connected_ids <- union(edges_filt$source, edges_filt$target)
-
 nodes_filt <- nodes_filt %>%
   filter(id %in% connected_ids)
-
 # add weight
 edges_filt$Weight <- abs(edges_filt$mean_r)
 # add gene type
@@ -284,7 +271,6 @@ nodes_filt$type2 <- ifelse(nodes_filt$type == "gene",
 # write to CSV for Gephi
 write.csv(nodes_filt, paste0(outdir,"gephi_nodes.csv"), row.names = FALSE)
 write.csv(edges_filt, paste0(outdir,"gephi_edges.csv"), row.names = FALSE)
-
 # plot barplot
 bact_nodes <- nodes_filt[nodes_filt$type == "bacteria",]
 bact_nodes <- bact_nodes[order(bact_nodes$n_gm_edges, decreasing = T),]
